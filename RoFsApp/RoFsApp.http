@@ -1,0 +1,430 @@
+@RoFsApp_HostAddress = http://localhost:15066
+
+### Get All cities and their 7 days weather forecast
+GET {{RoFsApp_HostAddress}}/cities/
+Accept: application/json
+
+
+### Add some new cities
+POST {{RoFsApp_HostAddress}}/cities
+Content-Type: application/json
+Accept: application/json
+
+[
+  {
+    "name": "Chengdu",
+    "country": "China",
+    "Showplaces": [
+      "Panda Base",
+      "Jinli Ancient Street",
+      "Wuhou Shrine"
+    ]
+  },
+  {
+    "name": "Chongqing",
+    "country": "China",
+    "Showplaces": [
+      "Ciqikou Ancient Town",
+      "Hongya Cave",
+      "Three Gorges Museum"
+    ]
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "Showplaces": [
+      "The Bund",
+      "Yu Garden",
+      "Oriental Pearl Tower"
+    ]
+  },
+  {
+    "name": "Guilin",
+    "country": "China",
+    "Showplaces": [
+      "Li River",
+      "Reed Flute Cave",
+      "Elephant Trunk Hill"
+    ]
+  },
+  {
+    "name": "Hangzhou",
+    "country": "China",
+    "Showplaces": [
+      "West Lake",
+      "Lingyin Temple",
+      "Qiantang River"
+    ]
+  },
+  {
+    "name": "Suzhou",
+    "country": "China",
+    "Showplaces": [
+      "Humble Administrator's Garden",
+      "Suzhou Museum",
+      "Zhouzhuang"
+    ]
+  },
+  {
+    "name": "Lhasa",
+    "country": "China",
+    "Showplaces": [
+      "Potala Palace",
+      "Jokhang Temple",
+      "Barkhor Street"
+    ]
+  },
+  {
+    "name": "Hong Kong",
+    "country": "China",
+    "Showplaces": [
+      "Victoria Peak",
+      "Ocean Park",
+      "Disneyland"
+    ]
+  },
+  {
+    "name": "Macau",
+    "country": "China",
+    "Showplaces": [
+      "Ruins of St. Paul's",
+      "Senado Square",
+      "Macau Tower"
+    ]
+  },
+  {
+    "name": "Taipei",
+    "country": "China",
+    "Showplaces": [
+      "Taipei 101",
+      "National Palace Museum",
+      "Shilin Night Market"
+    ]
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "Showplaces": [
+      "Kinkaku-ji",
+      "Fushimi Inari Shrine",
+      "Arashiyama Bamboo Grove"
+    ]
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "Showplaces": [
+      "Osaka Castle",
+      "Dotonbori",
+      "Universal Studios"
+    ]
+  },
+  {
+    "name": "Nara",
+    "country": "Japan",
+    "Showplaces": [
+      "Todai-ji",
+      "Nara Park",
+      "Kasuga Taisha"
+    ]
+  },
+  {
+    "name": "Hiroshima",
+    "country": "Japan",
+    "Showplaces": [
+      "Atomic Bomb Dome",
+      "Itsukushima Shrine",
+      "Hiroshima Peace Memorial Park"
+    ]
+  },
+  {
+    "name": "Sapporo",
+    "country": "Japan",
+    "Showplaces": [
+      "Odori Park",
+      "Sapporo TV Tower",
+      "Sapporo Beer Museum"
+    ]
+  },
+  {
+    "name": "Fukuoka",
+    "country": "Japan",
+    "Showplaces": [
+      "Fukuoka Tower",
+      "Ohori Park",
+      "Canal City Hakata"
+    ]
+  },
+  {
+    "name": "Busan",
+    "country": "South Korea",
+    "Showplaces": [
+      "Haeundae Beach",
+      "Gamcheon Culture Village",
+      "Beomeosa Temple"
+    ]
+  },
+  {
+    "name": "Jeju",
+    "country": "South Korea",
+    "Showplaces": [
+      "Seongsan Ilchulbong",
+      "Hallasan National Park",
+      "Jeju Loveland"
+    ]
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "Showplaces": [
+      "Grand Palace",
+      "Wat Arun",
+      "Chatuchak Weekend Market"
+    ]
+  },
+  {
+    "name": "Chiang Mai",
+    "country": "Thailand",
+    "Showplaces": [
+      "Doi Suthep",
+      "Wat Phra Singh",
+      "Chiang Mai Night Safari"
+    ]
+  },
+  {
+    "name": "Phuket",
+    "country": "Thailand",
+    "Showplaces": [
+      "Patong Beach",
+      "Big Buddha",
+      "Phi Phi Islands"
+    ]
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "Showplaces": [
+      "Marina Bay Sands",
+      "Gardens by the Bay",
+      "Sentosa Island"
+    ]
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "Showplaces": [
+      "Petronas Twin Towers",
+      "Batu Caves",
+      "KL Tower"
+    ]
+  },
+  {
+    "name": "Jakarta",
+    "country": "Indonesia",
+    "Showplaces": [
+      "Taman Mini Indonesia Indah",
+      "Ancol Dreamland",
+      "Istiqlal Mosque"
+    ]
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "Showplaces": [
+      "Intramuros",
+      "Rizal Park",
+      "Manila Ocean Park"
+    ]
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "Showplaces": [
+      "Hoa Lo Prison",
+      "Temple of Literature",
+      "Hoan Kiem Lake"
+    ]
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "Showplaces": [
+      "Notre-Dame Cathedral",
+      "War Remnants Museum",
+      "Ben Thanh Market"
+    ]
+  },
+  {
+    "name": "Yangon",
+    "country": "Myanmar",
+    "Showplaces": [
+      "Shwedagon Pagoda",
+      "Bogyoke Aung San Market",
+      "Yangon Circular Train"
+    ]
+  },
+  {
+    "name": "Kathmandu",
+    "country": "Nepal",
+    "Showplaces": [
+      "Swayambhunath",
+      "Pashupatinath",
+      "Boudhanath"
+    ]
+  },
+  {
+    "name": "Colombo",
+    "country": "Sri Lanka",
+    "Showplaces": [
+      "Gangaramaya Temple",
+      "Independence Memorial Hall",
+      "Galle Face Green"
+    ]
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "Showplaces": [
+      "Gateway of India",
+      "Elephanta Caves",
+      "Chhatrapati Shivaji Terminus"
+    ]
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "Showplaces": [
+      "India Gate",
+      "Qutub Minar",
+      "Red Fort"
+    ]
+  },
+  {
+    "name": "Agra",
+    "country": "India",
+    "Showplaces": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Fatehpur Sikri"
+    ]
+  },
+  {
+    "name": "Jaipur",
+    "country": "India",
+    "Showplaces": [
+      "Amber Fort",
+      "City Palace",
+      "Hawa Mahal"
+    ]
+  },
+  {
+    "name": "Kolkata",
+    "country": "India",
+    "Showplaces": [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Indian Museum"
+    ]
+  },
+  {
+    "name": "Bangalore",
+    "country": "India",
+    "Showplaces": [
+      "Lalbagh Botanical Garden",
+      "Bangalore Palace",
+      "ISKCON Temple"
+    ]
+  },
+  {
+    "name": "Chennai",
+    "country": "India",
+    "Showplaces": [
+      "Marina Beach",
+      "Kapaleeshwarar Temple",
+      "Fort St. George"
+    ]
+  },
+  {
+    "name": "Kochi",
+    "country": "India",
+    "Showplaces": [
+      "Fort Kochi",
+      "Mattancherry Palace",
+      "Cherai Beach"
+    ]
+  },
+  {
+    "name": "Pune",
+    "country": "India",
+    "Showplaces": [
+      "Aga Khan Palace",
+      "Shaniwar Wada",
+      "Sinhagad Fort"
+    ]
+  },
+  {
+    "name": "Hyderabad",
+    "country": "India",
+    "Showplaces": [
+      "Charminar",
+      "Golconda Fort",
+      "Ramoji Film City"
+    ]
+  },
+  {
+    "name": "Dubai",
+    "country": "United Arab Emirates",
+    "Showplaces": [
+      "Burj Khalifa",
+      "Dubai Mall",
+      "Palm Jumeirah"
+    ]
+  },
+  {
+    "name": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "Showplaces": [
+      "Sheikh Zayed Grand Mosque",
+      "Ferrari World",
+      "Emirates Palace"
+    ]
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "Showplaces": [
+      "Souq Waqif",
+      "The Pearl-Qatar",
+      "Katara Cultural Village"
+    ]
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "Showplaces": [
+      "Hagia Sophia",
+      "Topkapi Palace",
+      "Blue Mosque"
+    ]
+  },
+  {
+    "name": "Cairo",
+    "country": "Egypt",
+    "Showplaces": [
+      "Pyramids of Giza",
+      "Khan el-Khalili",
+      "Egyptian Museum"
+    ]
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "Showplaces": [
+      "Table Mountain",
+      "V&A Waterfront",
+      "Robben Island"
+    ]
+  }
+]
+
+###
